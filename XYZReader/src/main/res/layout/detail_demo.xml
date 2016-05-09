@@ -9,6 +9,7 @@ android:fitsSystemWindows="true"
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
+        android:layout_marginTop="?attr/actionBarSize"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
@@ -18,7 +19,6 @@ android:fitsSystemWindows="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:elevation="0dp"
-        android:background="@android:color/transparent"
         >
 
         <android.support.v7.widget.Toolbar
