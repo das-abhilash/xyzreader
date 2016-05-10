@@ -489,10 +489,10 @@ public final class R {
 		public static final int highlight_alpha_material_colored = 0x7f090073;
 		public static final int highlight_alpha_material_dark = 0x7f090074;
 		public static final int highlight_alpha_material_light = 0x7f090075;
-		public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f090076;
-		public static final int notification_large_icon_height = 0x7f090077;
-		public static final int notification_large_icon_width = 0x7f090078;
-		public static final int notification_subtext_size = 0x7f090079;
+		public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f090077;
+		public static final int notification_large_icon_height = 0x7f090078;
+		public static final int notification_large_icon_width = 0x7f090079;
+		public static final int notification_subtext_size = 0x7f09007a;
 	}
 	public static final class drawable {
 		public static final int abc_ab_share_pack_mtrl_alpha = 0x7f020000;
@@ -564,9 +564,9 @@ public final class R {
 		public static final int abc_textfield_search_activated_mtrl_alpha = 0x7f020042;
 		public static final int abc_textfield_search_default_mtrl_alpha = 0x7f020043;
 		public static final int abc_textfield_search_material = 0x7f020044;
-		public static final int design_fab_background = 0x7f020046;
-		public static final int design_snackbar_background = 0x7f020047;
-		public static final int notification_template_icon_bg = 0x7f02004f;
+		public static final int design_fab_background = 0x7f020047;
+		public static final int design_snackbar_background = 0x7f020048;
+		public static final int notification_template_icon_bg = 0x7f020051;
 	}
 	public static final class id {
 		public static final int action0 = 0x7f0e0083;

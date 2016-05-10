@@ -1,7 +1,15 @@
 [
     {
+        "merged": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\animvecrtor.xml",
+        "source": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\src\\main\\res\\drawable-v21\\animvecrtor.xml"
+    },
+    {
         "merged": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
         "source": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\vector.xml",
+        "source": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\src\\main\\res\\drawable-v21\\vector.xml"
     },
     {
         "merged": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\white_selectable_item_background_circle.xml",

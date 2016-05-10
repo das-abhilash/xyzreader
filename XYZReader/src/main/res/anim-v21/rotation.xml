@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:duration="6000"
+        android:propertyName="rotation"
+        android:valueFrom="0"
+        android:valueTo="360" />
+</set>-->
+
+<!--
+<objectAnimator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="6000"
+    android:propertyName="rotation"
+    android:valueFrom="0"
+    android:valueTo="360"/>-->
+<!--
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+       android:fromXScale="1.0"
+       android:fromYScale="1.0"
+       android:toXScale="0.0"
+       android:toYScale="0.0"
+       android:duration="100"
+       android:pivotX="50%"
+       android:pivotY="50%"
+       android:shareInterpolator="true"
+       android:fillAfter="true">
+</scale>-->
+<!--
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+       android:fromXScale="0.0"
+       android:fromYScale="0.0"
+       android:toXScale="1.0"
+       android:toYScale="1.0"
+       android:duration="500"
+       android:pivotX="50%"
+       android:pivotY="50%"
+       android:startOffset="200"
+       android:interpolator="@android:anim/bounce_interpolator"
+       android:shareInterpolator="true"
+       android:fillAfter="true">
+</scale>-->
+<rotate
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:toDegrees="360"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:duration="500" />
