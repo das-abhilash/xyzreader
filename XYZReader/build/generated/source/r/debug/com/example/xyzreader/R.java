@@ -2934,7 +2934,8 @@ containing a value of this type.
         public static final int Widget_Design_TextInputLayout=0x7f0a0148;
     }
     public static final class transition {
-        public static final int grid_exit=0x7f060000;
+        public static final int detail_enter=0x7f060000;
+        public static final int grid_exit=0x7f060001;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.

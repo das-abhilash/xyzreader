@@ -15,12 +15,15 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v13.app.FragmentStatePagerAdapter;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.transition.Fade;
 import android.transition.Slide;
+import android.transition.TransitionInflater;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -58,6 +61,7 @@ public class ArticleDetailActivity extends AppCompatActivity
     private View mUpButton;
     private ScrollView mScrollView;
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,10 +73,13 @@ public class ArticleDetailActivity extends AppCompatActivity
         }
         setContentView(R.layout.detail_demo);
 
+        Fade fade = (Fade) TransitionInflater.from(this).inflateTransition(R.transition.detail_enter);
+        getWindow().setEnterTransition(fade);
+
       //  setupWindowAnimations();
         getLoaderManager().initLoader(0, null, this);
 
-        mScrollView = (ScrollView) findViewById(R.id.scrollview);
+
         mPagerAdapter = new MyPagerAdapter(getFragmentManager());
         mPager = (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(mPagerAdapter);
@@ -85,8 +92,8 @@ public class ArticleDetailActivity extends AppCompatActivity
                 final float alpha;
                 final float scale;
                 final float translationX;
-                /*
                 //FOR FLOW EFFECT
+               /* if (position > 0 && position < 1)
                 page.setRotationY(position * -30f);*/
 
                 //FOR SLIDE OVER
@@ -139,10 +146,12 @@ public class ArticleDetailActivity extends AppCompatActivity
                     scale = 1;
                     translationX = 0;
                 }*/
+
                 page.setAlpha(alpha);
                 page.setTranslationX(translationX);
                 page.setScaleX(scale);
                 page.setScaleY(scale);
+
             }
         });
         mPager.setPageMargin((int) TypedValue
@@ -155,9 +164,10 @@ public class ArticleDetailActivity extends AppCompatActivity
 
                /* final OvershootInterpolator interpolator = new OvershootInterpolator();
                 ViewCompat.animate(fab).rotation(360f).withLayer().setDuration(300).setInterpolator(interpolator).start();*/
-                Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotation);
+                /*Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotation);
                 animation.setInterpolator(AnimationUtils.loadInterpolator(getApplicationContext(),android.R.interpolator.linear_out_slow_in));
-                fab.startAnimation(animation);
+                fab.startAnimation(animation);*/
+                fab.setRotation(positionOffset * 360.0f);
             }
 
             @Override
@@ -295,6 +305,7 @@ public class ArticleDetailActivity extends AppCompatActivity
         public void setPrimaryItem(ViewGroup container, int position, Object object) {
             super.setPrimaryItem(container, position, object);
             ArticleDetailFragment fragment = (ArticleDetailFragment) object;
+
           //  setupWindowAnimations();
             if (fragment != null) {
              //   mSelectedItemUpButtonFloor = fragment.getUpButtonFloor();
