@@ -97,7 +97,7 @@
                 android:layout_marginRight="@dimen/detail_inner_horiz_margin"
                 android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier"
                 android:paddingBottom="@dimen/detail_body_bottom_margin"
-                android:textColor="@color/PrimaryText"
+                android:textColor="@color/SecondaryText"
                 android:textColorLink="#0000ff"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:gravity = "start"

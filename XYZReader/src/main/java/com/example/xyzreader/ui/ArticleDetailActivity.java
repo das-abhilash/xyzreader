@@ -244,14 +244,6 @@ public class ArticleDetailActivity extends AppCompatActivity
     }
 
     @Override
-    public void onEnterAnimationComplete() {
-        super.onEnterAnimationComplete();
-        final int startScrollPos = getResources().getDimensionPixelSize((int) R.dimen.init_scroll_up_distance);
-        Animator animator = ObjectAnimator.ofInt(mScrollView,"scrollY",startScrollPos).setDuration(1500);
-        animator.start();
-    }
-
-    @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
         return ArticleLoader.newAllArticlesInstance(this);
     }

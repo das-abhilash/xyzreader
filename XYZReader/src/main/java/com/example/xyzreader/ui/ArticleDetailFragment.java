@@ -1,5 +1,7 @@
 package com.example.xyzreader.ui;
 
+import android.animation.Animator;
+import android.animation.ObjectAnimator;
 import android.annotation.TargetApi;
 import android.app.Fragment;
 import android.app.LoaderManager;
@@ -26,6 +28,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.android.volley.VolleyError;
@@ -50,7 +53,7 @@ public class ArticleDetailFragment extends Fragment implements
     private long mItemId;
     private View mRootView;
     private int mMutedColor = 0xFF333333;
-    private ObservableScrollView mScrollView;
+    private ScrollView mScrollView;
     private DrawInsetsFrameLayout mDrawInsetsFrameLayout;
     private ColorDrawable mStatusBarColorDrawable;
 
@@ -111,6 +114,11 @@ public class ArticleDetailFragment extends Fragment implements
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         mRootView = inflater.inflate(R.layout.detail_demo_frag, container, false);
+
+        mScrollView = (ScrollView) mRootView.findViewById(R.id.scrollview);
+        final int startScrollPos = getResources().getDimensionPixelSize((int) R.dimen.init_scroll_up_distance);
+        Animator animator = ObjectAnimator.ofInt(mScrollView, "scrollY", startScrollPos).setDuration(500);
+        animator.start();
 
        // AnimatedVectorDrawable rotateFAB = (AnimatedVectorDrawable) getActivity().getResources().getDrawable(R.drawable.animvecrtor,null) ;
                 //(AnimatedVectorDrawable) getActivity().findViewById(R.drawable.animvecrtor);;

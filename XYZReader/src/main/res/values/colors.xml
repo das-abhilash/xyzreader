@@ -15,6 +15,19 @@
      limitations under the License.
 -->
 
+<!--<resources>
+    <color name="photo_placeholder">#ccc</color>
+
+    <color name="theme_primary">#04561A</color>
+    <color name="theme_primary_dark">#04561A</color>
+    <color name="theme_accent">#04561A</color>
+    <color name="ltgray">#ffe0e0e0</color>
+    <color name="colorPrimary">#9c27b0</color>
+    <color name="colorPrimaryDark">#7B1FA2</color>
+    <color name="colorAccent">#FFC107</color>
+    <color name="PrimaryText">#212121</color>
+    <color name="SecondaryText">#727272</color>
+</resources>-->
 <resources>
     <color name="photo_placeholder">#ccc</color>
 
@@ -22,9 +35,17 @@
     <color name="theme_primary_dark">#04561A</color>
     <color name="theme_accent">#04561A</color>
     <color name="ltgray">#ffe0e0e0</color>
-        <color name="colorPrimary">#9c27b0</color>
-        <color name="colorPrimaryDark">#7B1FA2</color>
-        <color name="colorAccent">#FFC107</color>
+
+    <color name="colorPrimary">#673ab7</color>
+    <color name="colorPrimaryDark">#512da8</color>
+    <color name="colorAccent">#ffc400</color>
     <color name="PrimaryText">#212121</color>
     <color name="SecondaryText">#727272</color>
+
+    <color name="tint">#FEFEFE</color>
+    <color name="HEading">#252525</color>
+    <color name="sub">#817F79</color>
+    <color name="asf">#D9FFFFFF</color>
+    <color name="awde">#D9000000</color>
+
 </resources>
