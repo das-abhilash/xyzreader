@@ -31,6 +31,8 @@
             android:id="@+id/detail_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_scrollFlags="scroll"
             />
     </android.support.design.widget.AppBarLayout>
 
@@ -51,7 +53,7 @@
         app:layout_anchor="@+id/pager"
         app:layout_anchorGravity="bottom|right|end"
         app:elevation="6dp"
-
+android:tint="@color/tint"
         app:pressedTranslationZ="12dp"
         />
 
