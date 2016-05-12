@@ -78,7 +78,7 @@ public class ArticleDetailActivity extends AppCompatActivity
                 page.setRotationY(position * -30f);*/
 
                 //FOR SLIDE OVER
-                /* if (position < 0 && position > -1) {
+                 if (position < 0 && position > -1) {
                     // this is the page to the left
                     scale = Math.abs(Math.abs(position) - 1) * (1.0f - SCALE_FACTOR_SLIDE) + SCALE_FACTOR_SLIDE;
                     alpha = Math.max(MIN_ALPHA_SLIDE, 1 - Math.abs(position));
@@ -93,7 +93,7 @@ public class ArticleDetailActivity extends AppCompatActivity
                     alpha = 1;
                     scale = 1;
                     translationX = 0;
-                }*/
+                }
 
 
                //FOR DEPTH EFFECT
@@ -110,7 +110,7 @@ public class ArticleDetailActivity extends AppCompatActivity
                 }*/
 
                 // FOR ZOOM EFFECT
-                if (position >= -1 && position <= 1) {
+               /* if (position >= -1 && position <= 1) {
                     scale = Math.max(MIN_SCALE_ZOOM, 1 - Math.abs(position));
                     alpha = MIN_ALPHA_ZOOM +
                             (scale - MIN_SCALE_ZOOM) / (1 - MIN_SCALE_ZOOM) * (1 - MIN_ALPHA_ZOOM);
@@ -125,7 +125,7 @@ public class ArticleDetailActivity extends AppCompatActivity
                     alpha = 1;
                     scale = 1;
                     translationX = 0;
-                }
+                }*/
 
                 page.setAlpha(alpha);
                 page.setTranslationX(translationX);

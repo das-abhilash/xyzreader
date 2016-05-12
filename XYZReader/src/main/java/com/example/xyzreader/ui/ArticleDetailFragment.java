@@ -185,7 +185,7 @@ public class ArticleDetailFragment extends Fragment implements
 
             Picasso.with(getActivity()).load(mCursor.getString(ArticleLoader.Query.PHOTO_URL)).into(new Target() {
                 @Override
-                public void onBitmapLoaded (final Bitmap bitmap, Picasso.LoadedFrom from) {
+                public void onBitmapLoaded(final Bitmap bitmap, Picasso.LoadedFrom from) {
 
                     if (bitmap != null) {
                         Palette p = Palette.generate(bitmap, 12);
@@ -206,6 +206,32 @@ public class ArticleDetailFragment extends Fragment implements
 
                 }
             });
+/*
+            holder.thumbnailView.setImageUrl(
+                    mCursor.getString(ArticleLoader.Query.THUMB_URL),
+                    ImageLoaderHelper.getInstance(ArticleListActivity.this).getImageLoader());
+*/
+
+           /* ImageLoaderHelper.getInstance(getActivity()).getImageLoader()
+                    .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
+                        @Override
+                        public void onResponse(ImageLoader.ImageContainer imageContainer, boolean b) {
+                            Bitmap bitmap = imageContainer.getBitmap();
+                            if (bitmap != null) {
+                                Palette p = Palette.generate(bitmap, 12);
+                                mMutedColor = p.getDarkMutedColor(0xFF333333);
+                                mPhotoView.setImageBitmap(imageContainer.getBitmap());
+                                mRootView.findViewById(R.id.meta_bar)
+                                        .setBackgroundColor(mMutedColor);
+                               // updateStatusBar();
+                            }
+                        }
+
+                        @Override
+                        public void onErrorResponse(VolleyError volleyError) {
+
+                        }
+                    });*/
         } else {
             mRootView.setVisibility(View.GONE);
             titleView.setText("N/A");

@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     >
 <!--<com.example.xyzreader.ui.DrawInsetsFrameLayout
     android:id="@+id/draw_insets_frame_layout"
@@ -78,7 +79,8 @@
                     android:lineSpacingMultiplier="0.9"
                     android:paddingBottom="@dimen/detail_metabar_title_bottom_padding"
                     android:textColor="#fff"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    />
 
                 <TextView
                     android:id="@+id/article_byline"
@@ -99,7 +101,7 @@
                 android:paddingBottom="@dimen/detail_body_bottom_margin"
                 android:textColor="@color/SecondaryText"
                 android:textColorLink="@color/LinkColor"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
                 android:gravity = "start"
                 />
 
@@ -109,7 +111,7 @@
 <!--
 </FrameLayout>
 -->
-<!--
+<!--@style/TextAppearance.AppCompat.Body1
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>
 -->
 </android.support.design.widget.CoordinatorLayout>
