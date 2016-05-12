@@ -24,6 +24,7 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
+    <color name="article_byline">#8fff</color>
     <color name="asf">#D9FFFFFF</color>
     <color name="awde">#D9000000</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
@@ -45,6 +46,7 @@
     <color name="colorAccent">#ffc400</color>
     <color name="colorPrimary">#673ab7</color>
     <color name="colorPrimaryDark">#512da8</color>
+    <color name="color_white">#fff</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
     <color name="design_fab_shadow_start_color">#44000000</color>
@@ -77,6 +79,7 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
+    <color name="meta_bar">#333</color>
     <color name="photo_placeholder">#ccc</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
@@ -270,7 +273,7 @@
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
-    <item format="float" name="detail_body_line_spacing_multiplier" type="fraction">1.25</item>
+    <item format="float" name="detail_body_line_spacing_multiplier" type="fraction">1.2</item>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>

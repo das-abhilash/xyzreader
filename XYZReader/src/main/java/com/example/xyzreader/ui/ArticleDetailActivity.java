@@ -20,6 +20,7 @@ import android.transition.TransitionInflater;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
 import com.example.xyzreader.data.ItemsContract;
@@ -95,8 +96,6 @@ public class ArticleDetailActivity extends AppCompatActivity
                     scale = 1;
                     translationX = 0;
                 }
-
-
                 //FOR DEPTH EFFECT
               /* if (position > 0 && position < 1) {
                     // moving to the right
@@ -159,15 +158,14 @@ public class ArticleDetailActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
 
         setSupportActionBar(toolbar);
-        if (getResources().getBoolean(R.bool.isLargeScreen)){
+        if (getResources().getBoolean(R.bool.isLargeScreen)) {
             View decorView = getWindow().getDecorView();
-// Hide the status bar.
+           // Hide the status bar.
             int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
             decorView.setSystemUiVisibility(uiOptions);
 
             toolbar.setVisibility(View.GONE);
-        }
-        else {
+        } else {
             getSupportActionBar().setDisplayShowTitleEnabled(false);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
@@ -211,7 +209,8 @@ public class ArticleDetailActivity extends AppCompatActivity
         mCursor = null;
         mPagerAdapter.notifyDataSetChanged();
     }
-  private class MyPagerAdapter extends FragmentPagerAdapter {
+
+    private class MyPagerAdapter extends FragmentPagerAdapter {
         public MyPagerAdapter(FragmentManager fm) {
             super(fm);
         }
