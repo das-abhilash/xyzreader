@@ -41,12 +41,15 @@
     <color name="colorAccent">#ffc400</color>
     <color name="PrimaryText">#212121</color>
     <color name="SecondaryText">#727272</color>
-    <color name="tint">#FFFFFF</color>
-
-
+    <color name="windowBackground">#424242</color>
     <color name="LinkColor">#0000ff</color>
+
+
     <color name="sub">#817F79</color>
     <color name="asf">#D9FFFFFF</color>
     <color name="awde">#D9000000</color>
+    <color name="article_byline">#8fff</color>
+    <color name="color_white">#fff</color>
+    <color name="meta_bar">#333</color>
 
 </resources>

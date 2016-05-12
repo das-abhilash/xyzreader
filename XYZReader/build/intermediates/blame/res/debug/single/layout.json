@@ -64,12 +64,12 @@
         "source": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
         "source": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
@@ -218,9 +218,5 @@
     {
         "merged": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\select_dialog_item_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\main_content.xml",
-        "source": "C:\\Users\\IBM_ADMIN\\AndroidProject\\xyzreader\\XYZReader\\src\\main\\res\\layout\\main_content.xml"
     }
 ]

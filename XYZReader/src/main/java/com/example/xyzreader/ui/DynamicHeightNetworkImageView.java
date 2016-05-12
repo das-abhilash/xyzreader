@@ -30,5 +30,6 @@ public class DynamicHeightNetworkImageView extends NetworkImageView {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         int measuredWidth = getMeasuredWidth();
         setMeasuredDimension(measuredWidth, (int) (measuredWidth / mAspectRatio));
+
     }
 }

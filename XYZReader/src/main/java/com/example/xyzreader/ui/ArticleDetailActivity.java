@@ -1,6 +1,7 @@
 package com.example.xyzreader.ui;
 
 import android.annotation.TargetApi;
+import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.LoaderManager;
@@ -78,7 +79,7 @@ public class ArticleDetailActivity extends AppCompatActivity
                 page.setRotationY(position * -30f);*/
 
                 //FOR SLIDE OVER
-                 if (position < 0 && position > -1) {
+                if (position < 0 && position > -1) {
                     // this is the page to the left
                     scale = Math.abs(Math.abs(position) - 1) * (1.0f - SCALE_FACTOR_SLIDE) + SCALE_FACTOR_SLIDE;
                     alpha = Math.max(MIN_ALPHA_SLIDE, 1 - Math.abs(position));
@@ -96,7 +97,7 @@ public class ArticleDetailActivity extends AppCompatActivity
                 }
 
 
-               //FOR DEPTH EFFECT
+                //FOR DEPTH EFFECT
               /* if (position > 0 && position < 1) {
                     // moving to the right
                     alpha = (1 - position);
@@ -156,9 +157,20 @@ public class ArticleDetailActivity extends AppCompatActivity
         });
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
+
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        if (getResources().getBoolean(R.bool.isLargeScreen)){
+            View decorView = getWindow().getDecorView();
+// Hide the status bar.
+            int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+            decorView.setSystemUiVisibility(uiOptions);
+
+            toolbar.setVisibility(View.GONE);
+        }
+        else {
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         if (savedInstanceState == null) {
             if (getIntent() != null && getIntent().getData() != null) {
