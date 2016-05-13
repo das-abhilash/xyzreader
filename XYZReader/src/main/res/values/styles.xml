@@ -17,7 +17,7 @@
 
 <resources>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -26,9 +26,10 @@
         <item name="android:divider">#B6B6B6</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <!-- <item name="android:windowExitTransition">@transition/grid_exit</item>-->
     </style>
+<style name="AppTheme" parent="AppBaseTheme">
 
+</style>
     <style name="AppTheme.Detail" parent="BaseTheme">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
